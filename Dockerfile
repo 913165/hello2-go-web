@@ -9,8 +9,8 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /hello-docker
+RUN go build -o /hello-go-web
 
 EXPOSE 3000
 
-CMD [ "/hello-docker" ]
+CMD [ "/hello-go-web" ]
